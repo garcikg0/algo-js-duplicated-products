@@ -6,11 +6,15 @@ const weightStr1 = [2,5,1,1,1]
 // const priceStr2 = [2,2,2,2,2]
 // const weightStr2 = [2,2,2,2,2]
 
-
+//Attempting with Linked List
 function numDuplicates(nameStr, priceStr, weightStr) {
-    console.log(nameStr)
-    console.log(priceStr) 
-    console.log(weightStr)
+    class LinkedList {
+        constructor() {
+            
+        }
+    }
+
+    const linkedList1 = new LinkedList();
 };
 
 numDuplicates(nameStr1, priceStr1, weightStr1);
