@@ -12,3 +12,37 @@ Worst: O(log n) Average: O(log n)
 
 The most common implementation of Maps is using an array and hash function. 
 
+LINKED LIST
+- The Constructor function in a class is the first code that executes when ever later you call new LinkedList();
+- When 'new' is used, it goes to the constructor function Ex. const linkedList1 = new LinkedList();
+- Elements in a linked list are called nodes. 
+- To efficiently insert new nodes, at least at the end and at the beginning of the list, we keep track of the first node (Head) and last node (Tail). 
+    - The Head and Tail allows us to have two specific markers, or markers, placed in the LinkedList which we want to keep updated.
+        - The Head Marker points to the first node of the LinkedList. 
+        - The Tail Marker points to the last node of the LinkedList.
+    - The Head and Tail allows us to efficiently prepend and append elements to the LinkedList
+- We implicitly store the data with LinkedLists. 
+    - The nodes know about the next node but each node doesn't necessarily know something about the list it's part of. 
+    - The list doesn't know all of it's nodes. 
+    - The list knows the first and last nodes of list elements. 
+    - The nodes themsleves know the next one in line. 
+- Adding an Append method 
+    - append should take a value. 
+    - create new node as an object. We store the value and pointer at the next element in line. 
+    const newNode = {value: value, next: null};
+    - check if we have a Tail --> if (this.tail) //if there is a tail:
+        - if true, we update the previous Tail's 'next' value to the new node.
+        - if false, we set the Tail to the newNode. 
+    - check if we have a Head --> if (!this.head) //if there is not a head:
+        - if true, we set the Head to the newNode.
+        - if false, nothing. 
+    - if the list is empty, the only new element is both head and tail. 
+- To Output a List 
+    - toArray() method and drill into each node next's property that are connected to each other
+    - set a variable with an empty array ex. const elements = []; 
+    - set a variable for the first node ex. let curNode = this.head.
+    - do an iteration with a while loop and variable with the first node ex. while (curNode){}
+        - add curNode element to the empty array ex. elements.push (curNode)
+        - replace curNode with the next node ex. curNode = curNode.next
+        - at the end, return the array, ex. return elements; 
+    - 

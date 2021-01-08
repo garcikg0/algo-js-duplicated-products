@@ -8,9 +8,22 @@ const weightStr1 = [2,5,1,1,1]
 
 //Attempting with Linked List
 function numDuplicates(nameStr, priceStr, weightStr) {
+    let n = nameStr.length
     class LinkedList {
         constructor() {
-            
+            this.head = null; // First element of the list
+            this.tail = null; // Last element of the list
+        }
+    
+        append(value) {
+            const newNode = { value: value, next: null};
+            if (this.tail) {
+                this.tail.next = newNode;
+            }
+            this.tail = newNode;
+            if (!this.head) {
+                this.head = newNode;
+            }
         }
     }
 
