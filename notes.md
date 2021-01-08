@@ -26,10 +26,11 @@ LINKED LIST
     - The list doesn't know all of it's nodes. 
     - The list knows the first and last nodes of list elements. 
     - The nodes themsleves know the next one in line. 
-- Adding an Append method 
-    - append should take a value. 
+- Adding an Append method - 
+    - append method should take a value. 
     - create new node as an object. We store the value and pointer at the next element in line. 
-    const newNode = {value: value, next: null};
+            const newNode = {value: value, next: null};
+                * When we append a node, it's always at the end of the list (to the right of the previous value) *
     - check if we have a Tail --> if (this.tail) //if there is a tail:
         - if true, we update the previous Tail's 'next' value to the new node.
         - if false, we set the Tail to the newNode. 
@@ -45,4 +46,17 @@ LINKED LIST
         - add curNode element to the empty array ex. elements.push (curNode)
         - replace curNode with the next node ex. curNode = curNode.next
         - at the end, return the array, ex. return elements; 
-    - 
+- To Prepend 
+    - prepend method should take a value. 
+    - create new node as an object. We store the value and pointer to the current head (the head that is about to be repaced.)
+            const newNode = { value: value, next: this.head};
+                * When we prepend, we push the previous head to the next element * 
+                    - In other words, we save a copy of the head about to be replaced and put it in the next key of the newNode. 
+    - set the head as the newNode.   
+            this.head = newNode;
+    - if we have an empty list, set the Tail as the newNode. 
+        if (!this.tail) {
+                this.tail = newNode;
+            }
+        * By setting the newNode as the Head and Tail results in it being the first and and only element in the LinkedList *
+
