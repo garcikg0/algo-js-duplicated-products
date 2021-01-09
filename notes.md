@@ -1,4 +1,4 @@
-HashMaps (url: https://adrianmejia.com/data-structures-time-complexity-for-beginners-arrays-hashmaps-linked-lists-stacks-queues-tutorial/)
+HashMaps (url : https://adrianmejia.com/data-structures-time-complexity-for-beginners-arrays-hashmaps-linked-lists-stacks-queues-tutorial/)
 Hashrtable is a data structure that maps keys to values. 
 Hash Map uses a hash table for implmentation while treemaps uses a binary search tree. 
 In arrays, the data is referenced using a numberic index (relatively to the postiion). 
@@ -12,7 +12,7 @@ Worst: O(log n) Average: O(log n)
 
 The most common implementation of Maps is using an array and hash function. 
 
-LINKED LIST
+LINKED LIST ( url : https://www.youtube.com/watch?v=41GSinwoMYA start at 41:19)
 - The Constructor function in a class is the first code that executes when ever later you call new LinkedList();
 - When 'new' is used, it goes to the constructor function Ex. const linkedList1 = new LinkedList();
 - Elements in a linked list are called nodes. 

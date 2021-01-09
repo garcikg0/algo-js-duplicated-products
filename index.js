@@ -8,30 +8,23 @@ const weightStr1 = [2,5,1,1,1]
 
 //Attempting with Linked List
 function numDuplicates(nameStr, priceStr, weightStr) {
-    let n = nameStr.length
+
     class LinkedList {
         constructor() {
-            this.head = null; // First element of the list
-            this.tail = null; // Last element of the list
+            this.name = null; 
+            this.price = null; 
+            this.weight = null;
+            this.next = null;
         }
-    
-        append(value) {
-            const newNode = { value: value, next: null};
+
+        append(name, price, weight) {
+            const newNode = { name: this.name, price: this.price, weight: this.weight, next: null};
             if (this.tail) {
                 this.tail.next = newNode;
             }
             this.tail = newNode;
             if (!this.head) {
                 this.head = newNode;
-            }
-        }
-
-        prepend(value) {
-            const newNode = { value: value, next: this.head};
-
-            this.head = newNode;
-            if (!this.tail) {
-                this.tail = newNode;
             }
         }
 
@@ -48,6 +41,10 @@ function numDuplicates(nameStr, priceStr, weightStr) {
     }
 
     const linkedList1 = new LinkedList();
+    linkedList1.append(nameStr[0])
+    linkedList1.append(priceStr[0])
+    linkedList1.append(weightStr[0])
+    console.log( linkedList1.head.value)
 };
 
 numDuplicates(nameStr1, priceStr1, weightStr1);
