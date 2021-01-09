@@ -2,7 +2,7 @@ const nameStr1 = ['ball', 'bat', 'glove', 'glove', 'glove'];
 const priceStr1 = [2,3,1,2,1];
 const weightStr1 = [2,5,1,1,1];
 
-['ball', 2, 2], ['bat', 3, 5], ['glove', 1, 1]
+// ['ball', 2, 2], ['bat', 3, 5], ['glove', 1, 1]
 
 function numDuplicates(nameStr, priceStr, weightStr) {
     let products = [];
