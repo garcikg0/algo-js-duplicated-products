@@ -10,7 +10,7 @@ function numDuplicates(nameStr, priceStr, weightStr) {
     let counter = 0;
     // let m = new Hashmap();
     for (i=0; i < nameStr.length; i++) {
-        products.set( nameStr[i], [priceStr[i], weightStr[i]] )
+        products.push( [nameStr[i], priceStr[i], weightStr[i]] )
     };
 
     console.log(products)
