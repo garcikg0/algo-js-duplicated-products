@@ -60,3 +60,4 @@ LINKED LIST ( url : https://www.youtube.com/watch?v=41GSinwoMYA start at 41:19)
             }
         * By setting the newNode as the Head and Tail results in it being the first and and only element in the LinkedList *
 
+Java Answer - https://stackoverflow.com/questions/58566800/comparing-products-given-three-seperate-lists
