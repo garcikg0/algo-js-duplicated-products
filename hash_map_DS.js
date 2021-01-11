@@ -5,15 +5,18 @@ const weightStr1 = [2,5,1,1,1];
 function numDuplicates(nameStr, priceStr, weightStr) {
     const n = nameStr.length;  
     let products = [];
-    let currentProduct = [];
+    let currentProduct = null;
     let counter = 0;
+    let hashkey = 0;
     //create array
-    for (i=0; i < nameStr.length; i++){
-        
-    }
     //create hash key 
-    for (i=0; i < nameStr.length; i++) {
-        let hashKey = 0;
-        
+    for (i=0; i < n; i++){
+        currentProduct = [nameStr[i], priceStr[i], weightStr[i]];
+        let charCode = nameStr[i] + 
+        console.log(currentProduct)
     }
-}
+   
+
+};
+
+numDuplicates(nameStr1, priceStr1, weightStr1);

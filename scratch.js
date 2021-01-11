@@ -6,18 +6,18 @@ const weightStr1 = [2,5,1,1,1];
 
 function numDuplicates(nameStr, priceStr, weightStr) {
     let products = [];
+    let currentProduct = {}
     let counter = 0;
+    // let m = new Hashmap();
     for (i=0; i < nameStr.length; i++) {
-        let product = [nameStr[i], priceStr[i], weightStr[i]]
+        products.set( nameStr[i], [priceStr[i], weightStr[i]] )
+    };
 
-        products.push(product)
-
-    }
     console.log(products)
-    console.log(products[2])
-    console.log(products[4])
-    console.log(products[2] === products[4] ? 'dup' : 'not a dup');
-     
+    // console.log(products[2][0])
+    // console.log(products[4][0])
+    // console.log(products[2][0] === products[4][0] ? 'dup' : 'not a dup');
+     debugger
 };
 
 numDuplicates(nameStr1, priceStr1, weightStr1);
