@@ -1,4 +1,4 @@
-const nameStr1 = ['ball', 'bat', 'glove', 'glove', 'glove', 'bat'];
+const nameStr1 = ['ball', 'bat', 'glove', 'glove', 'glove'];
 const priceStr1 = [2,3,1,2,1];
 const weightStr1 = [2,5,1,1,1];
 
@@ -17,7 +17,6 @@ function numDuplicates(nameStr, priceStr, weightStr) {
             resultData.set(currentProduct, 1)
         } 
     }
-    console.log(resultData)
     console.log(count)
 
 };
