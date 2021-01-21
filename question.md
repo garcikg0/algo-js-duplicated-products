@@ -20,7 +20,7 @@ glove   2       1
 glove   1       1   
 
 The first two items are unique. 
-The two globes at indices 2 and 4 are equal in all three attributes so there is 1 duplicate. 
+The two gloves at indices 2 and 4 are equal in all three attributes so there is 1 duplicate. 
 The last glove at index 3 has a different price from the other two, so it is not a duplicate. 
 
 There is 1 duplicate item in the original list. 

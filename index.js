@@ -6,11 +6,15 @@ const nameStr2 = ['ball', 'box', 'lamp', 'brick', 'pump'];
 const priceStr2 = [2,2,2,2,2]
 const weightStr2 = [2,2,2,2,2]
 
+const nameStr3 = ['ball', 'bat', 'glove', 'glove', 'glove', 'box', 'box'];
+const priceStr3 = [2,3,1,2,1,2,22];
+const weightStr3 = [2,5,1,1,1,22,2];
+
 function numDuplicates(nameStr, priceStr, weightStr) {
     let count = 0;
     const resultData = new Map();
     for (i=0; i < nameStr.length; i++) { 
-        let currentProduct = nameStr[i] + priceStr[i] + weightStr[i]
+        let currentProduct = nameStr[i] + '$' + priceStr[i] + '#' + weightStr[i]
         if (resultData.get(currentProduct) != null) {
             count++;
         } else {
@@ -23,3 +27,4 @@ function numDuplicates(nameStr, priceStr, weightStr) {
 
 numDuplicates(nameStr1, priceStr1, weightStr1);
 numDuplicates(nameStr2, priceStr2, weightStr2);
+numDuplicates(nameStr3, priceStr3, weightStr3);
